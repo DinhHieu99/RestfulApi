@@ -60,8 +60,7 @@ public class AccountController {
     @DeleteMapping("/accounts/{id}")
     public ResponseDto removeAccount(@PathVariable int id) {
         accountService.deleteAccount(id);
-        List<AccountDto> accountDtos = accountService.getAccountByIdOrMobile(id,"");
 
-        return new ResponseDto(200, "Success", accountDtos);
+        return new ResponseDto(200, "Success", null);
     }
 }
