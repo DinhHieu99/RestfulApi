@@ -1,0 +1,9 @@
+use mysqldemo;
+
+select*from account;
+INSERT INTO `mysqldemo`.`account`
+(`id`,`address`,`age`,`is_deleted`,`mobile`,`name`,`password`,`username`) VALUES (1, 'Hà Nội',23, false, '065968461', 'Nam', '123456','Nam@gmail.com');
+INSERT INTO `mysqldemo`.`account`
+(`id`,`address`,`age`,`is_deleted`,`mobile`,`name`,`password`,`username`) VALUES (2, 'Hà Nam',23, false, '0123456789', 'Hưng', '123456','Hung@gmail.com');
+INSERT INTO `mysqldemo`.`account`
+(`id`,`address`,`age`,`is_deleted`,`mobile`,`name`,`password`,`username`) VALUES (3, 'Hà Nội',20, false, '0321654987', 'Khánh', '123456','Khanh@gmail.com');
